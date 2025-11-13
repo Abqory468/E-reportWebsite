@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.heroSection {
+    height: 70vh;
+    width: 100%;
+}
+
+#L1 {
+    transition: 0.3s ease;
+}
+
+#L1:hover {
+    transform: translateY(-8px);
+    transition: 0.3s ease;
+}
+
+.accordion-collapse {
+  overflow: hidden;
+  transition: max-height 0.8s cubic-bezier(0.25, 1, 0.3, 1), opacity 0.6s ease;
+}
+
+.accordion-collapse:not(.show) {
+  max-height: 0;
+  opacity: 0;
+}
+
+.accordion-collapse.show {
+  max-height: 600px;
+  opacity: 1;
+}
+
+#footerLink:hover {
+ text-decoration: underline !important;
+}

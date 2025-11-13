@@ -10,13 +10,15 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!-- Navbar -->
+    <nav class="navbar py-3 navbar-expand navbar-dark bg-primary" id="heroSection">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">E-Report Sekolah</a>
-        <div>
-          <a href="add-report.html" class="btn btn-light btn-sm"
-            >+ Tambah Laporan</a
-          >
+        <div class="d-flex gap-5">
+          <a href="index.html" class="nav-link text-light text-decoration-none">Beranda</a>
+          <a href="about.html" class="nav-link text-light text-decoration-none">Tentang</a>
+          <a href="faqhuu.html" class="nav-link text-light text-decoration-none">FAQ</a>
+          <a href="add-report.html" class="nav-link text-light text-decoration-none">+ Tambah Laporan</a>
         </div>
       </div>
     </nav>
@@ -53,6 +55,33 @@
       <div id="reportList" class="row gy-3"></div>
       <p id="filterStatusInfo" class="text-muted"></p>
     </main>
+
+    <!-- Footer -->
+     <div class="footer bg-primary-subtle py-5 text-center d-flex justify-content-center">
+      <div class="row">
+
+        <div class="col-md">
+          <h3><a href="index.html" class="fw-bold mx-lg-5 text-muted text-nowrap text-decoration-none">E-Report Sekolah</a></h3>
+        </div>
+        
+        <div class="col-md">
+          <h1 class="text-muted">|</h1>
+        </div>
+
+        <div class="col-md d-flex gap-5">
+          <div><a href="about.html" class="text-secondary text-decoration-none" id="footerLink">Tentang</a></div>
+          <div><a href="#layananSection" class="text-secondary text-decoration-none" id="footerLink">Layanan</a></div>
+          <div><a href="#dashboard" class="text-secondary text-decoration-none" id="footerLink">Dashboard</a></div>
+          <div><a href="#faqSection" class="text-secondary text-decoration-none" id="footerLink">FAQ</a></div>
+        </div>
+
+      </div>
+     </div>
+
+     <div class="bg-primary-subtle py-2">
+      <hr>
+      <p class="text-center">© Copyright 2025 E-Report Sekolah, All rights reserved. </p>
+     </div>
 
     <script src="js/reports.js"></script>
   </body>
